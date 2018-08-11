@@ -10,30 +10,32 @@ alias t='tail -f -n `expr $LINES / 2` '
 
 # Filesystem
 alias aliases='vim ~/.dotfiles/zsh/aliases'
+alias c='code'
+alias dot='cd ~/.dotfiles'
 alias l='ls -lrthG'
 alias la='ls -lrthGa'
-alias dot='cd ~/.dotfiles'
-alias c='code'
+alias sshconf='vim ~/.ssh/config'
 
 # Tmux
 alias tmux='TERM=screen-256color-bce tmux -2' # Better color support
 
 # Git
 alias g='g' # Overrides g alias from zsh with self defined function g()
-alias gp='git push'
 alias gco='git checkout'
 alias gd='git diff'
 alias gg="git log --pretty=format:'%Cred%h%Creset - %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative"
 alias ggg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gp='git push'
 alias gs='git stash'
 alias gsp='git stash pop'
 
 # Misc
 alias bi='bundle install'
-alias ctags="`brew --prefix`/bin/ctags"
-alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log --exclude=tmp *'
-alias cpd='cap production deploy'
-alias csd='cap staging deploy'
-alias cpdr='cap production deploy && cap production deploy:restart'
-alias csdr='cap staging deploy && cap staging deploy:restart'
 alias codepush='code-push release-react slickcoach ios'
+alias cpd='cap production deploy'
+alias cpdr='cap production deploy && cap production deploy:restart'
+alias csd='cap staging deploy'
+alias csdr='cap staging deploy && cap staging deploy:restart'
+alias ctags="`brew --prefix`/bin/ctags"
+alias getmyip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias retag='ctags -R --exclude=.svn --exclude=.git --exclude=log --exclude=tmp *'

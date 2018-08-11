@@ -1,9 +1,7 @@
 # Log files
-
 *.log
 
 # OS stuff
-
 .DS_Store
 .DS_Store?
 .Spotlight-V100

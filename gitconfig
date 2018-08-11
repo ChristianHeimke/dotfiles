@@ -1,9 +1,9 @@
 [user]
-    name = Mario Behrendt
-    email = m.behrendt@yanted.com
+    name = Christian Heimke
+    email = christian.heimke@loumaris.com
 [core]
     autocrlf = input
-    editor = /usr/bin/vim
+    editor = /usr/bin/nano
     excludesfile = ~/.gitignore
     pager = less
 [color]

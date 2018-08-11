@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Set theme
-export ZSH_THEME="simple"
+export ZSH_THEME="robbyrussell"
 
 # Add a few things to the path
 export PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH"
@@ -12,7 +12,25 @@ export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 
 # Load plugins
-plugins=(bundler git rbenv rake rails)
+plugins=( bundler
+          capistrano
+          common-aliases
+          docker
+          docker-compose
+          gem
+          git
+          knife
+          kubectl
+          rails
+          rake
+          ruby
+          rvm
+          sudo
+          vagrant
+          vscode
+          wd)
+
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,4 +62,4 @@ stty stop undef
 export LANG="en_GB.UTF-8"
 
 # Set $EDITOR
-export EDITOR='mvim -v'
+export EDITOR='nano'
