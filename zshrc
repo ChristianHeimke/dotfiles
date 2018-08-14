@@ -7,10 +7,6 @@ export ZSH_THEME="robbyrussell"
 # Add a few things to the path
 export PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
-# Rbenv
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-eval "$(rbenv init -)"
-
 # Load plugins
 plugins=( bundler
           capistrano
